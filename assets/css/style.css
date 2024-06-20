@@ -1,0 +1,173 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --secundario: #18D25C;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+body {
+    background-image: url(../img/fondoCarretera.jpg); /* Imagen pixabay -> wal_172619*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+}
+
+/* Utilidades*/
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+@media (min-width: 768px) { 
+   .line-height {
+        line-height: 2;
+    } 
+}
+
+
+/* Globales */
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+.parrafo__texto {
+    font-size: 2rem;
+    color: var(--blanco);
+    line-height: 1.5;
+}
+
+.contenedor {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) { 
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--blanco);
+}
+
+.logo__nombre {
+    font-weight: 400;
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) { 
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.header__texto {
+    color: var(--blanco);
+    padding: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .header__texto {
+        padding-top: 20rem;
+    }
+}
+
+.header__texto p {
+    padding-top: 2rem;
+}
+
+/* Resumen */
+.resumen__titulo h2 {
+    padding-bottom: 2rem;
+    color: var(--secundario);
+}
+@media (min-width: 768px) { 
+    .dos__columnas {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+    .columnas__aside {
+        flex: 0 0 calc( 50% - 1rem);
+    }
+}
+
+.columnas__aside h4 {
+    color: var(--secundario);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.udemy,
+.enlace {
+    color: var(--secundario);
+}
+
+.udemy {
+    text-transform: uppercase;
+}
+
+/* Footer */
+@media (min-width: 768px) { 
+    .footer {
+        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        color: white;
+    }
+}
+
+.footer {
+    background-color: var(--secundario);
+}
+
+.footer p {
+   padding-top: 1.5rem;
+   color: var(--negro);
+   font-size: 2rem;
+}
